@@ -1,0 +1,33 @@
+body{
+	background-color: rgba(53, 53, 46, 0.14);
+	padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    margin: 50px;
+}
+.styling{
+	 text-align: center;
+	 padding: 25px;
+     margin: 20px;
+     border-color: #E91E63;
+	 }
+
+ form{
+  	text-align: center;
+ }
+ .button{
+ 	text-align: center;
+ 	padding: 15px;
+ 	margin:10px;
+ 	border:25px;
+ 	background-color:rgb(170, 191, 195);
+ 	width: 85px;
+ }
+ .view{
+ 	text-align: center;
+	margin: 5px;
+    font-style: oblique;
+    color:"rgba(50, 70, 58, 0.88)";
+    padding:10px;
+    }

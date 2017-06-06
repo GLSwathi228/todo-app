@@ -1,0 +1,24 @@
+ul {
+	list-style:none;
+}
+body{
+	text-align:center;
+}
+.checked{
+	text-decoration:line-through;
+	
+}
+.text {
+	padding:25px;
+	margin:20px;
+	Border:10px;
+}
+	
+
+
+
+.close{
+	cursor:pointer;
+ 	list-style-position: inherit;
+    float: right;
+}

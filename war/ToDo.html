@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" href="ToDoExample.css">
+<title>
+ToDo List
+</title>
+</head>
+<script src="ToDoExample.js"></script>
+<body>
+<h1> My ToDo List</h1>
+<input type="text" id="myinput" class="text" placeholder="enter the item" >
+<!--<button onclick="Add()"id="Click">Click Me</button>-->
+<button type="button" onclick="return printCompletedItems">Show Completed Tasks</button>
+<button type="button"onclick="return printAllEntries()">Show all the tasks</button>
+
+
+<ul id="listofitems">
+</ul>
+<p id="display"></p>
+<script>
+var ullist=document.querySelector('ul');
+ullist.addEventListener('click',function(event){
+	if(event.target.tagName == "INPUT"){
+		event.target.parentElement.classList.toggle('checked');
+	}else if(event.target.tagName =="SPAN"){
+		event.target.parentNode.style.display = "none";
+	}
+},false);
+document.getElementById("myinput")
+.addEventListener("keyup", function(event) {
+event.preventDefault();
+if (event.keyCode == 13) {
+Add();
+}
+});
+</script>
+</body>
+</html>
